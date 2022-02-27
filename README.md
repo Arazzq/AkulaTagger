@@ -1,4 +1,5 @@
 # Akula Tagger
+![logo](https://telegra.ph/file/a332f34d3e593844ab2e2.jpg)
  `Je Luxe` `EpicProjects`
 
 _**Bu bot qruplarda 10,000-ə,kanallarda 200-ə qədər insanı tag edə bilir !**_
