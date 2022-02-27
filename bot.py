@@ -19,7 +19,7 @@ async def start(event):
   await event.reply("__**Mən Akula Tagger Bot**, Mən qrup və kanaldakı bütün userləri tag edə bilərəm 👻\nDaha çox məlumat üçün  **/help** toxun__\n\n",
                     buttons=(
                       [Button.url('📣 Support', 'https://t.me/EpicProjects'),
-                      Button.url('👩‍💻 Öz botunu yarat', 'https://t.me/epicprojects/15')]
+                      Button.url('👩‍💻 Öz botunu yarat', 'https://t.me/epicprojects/16')]
                     ),
                     link_preview=False
                    )
@@ -29,7 +29,7 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('📣 Kanal', 'https://t.me/EpicProjects'),
-                      Button.url('👩‍💻 Öz botunu yarat', 'https://t.me/epicprojects/14')]
+                      Button.url('👩‍💻 Öz botunu yarat', 'https://t.me/epicprojects/16')]
                     ),
                     link_preview=False
                    )
