@@ -16,20 +16,20 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("__**Mən Akula Tagger Bot**, Mən qrup və kanaldakı bütün userləri tag edə bilərəm 👻\nDaha çox məlumat üçün  **/help** toxun__\n\n",
+  await event.reply("__**Mən ERROR federasiyasının Tagger Bot**, Mən qrup və kanaldakı bütün userləri tag edə bilərəm 👻\nDaha çox məlumat üçün  **/help** toxun__\n\n",
                     buttons=(
-                      [Button.url('📣 Support', 'https://t.me/EpicProjects'),
-                      Button.url('👩‍💻 Öz botunu yarat', 'https://t.me/epicprojects/16')]
+                      [Button.url('📣 Support', 'https://t.me/ozuduqaqaw'),
+                      Button.url('👩‍💻 Öz botunu yarat', 'https://t.me/BotFather')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Akula Tagger'in kömək menyusu**\n\nƏmr: /mentionall\n__Bu əmr vasitəsilə başqalarını 1 mətnlə tag edə bilərsən.__\n`Nümunə: /mentionall Akulalar oyaqdılar!`\n__Həmçinin 1 mesaja cavab verərək /mentionall əmrini işlədə bilərsən. Bot userləri həmin mesaja tag edəcək__."
+  helptext = "**ERROR Tagger'in kömək menyusu**\n\nƏmr: /mentionall\n__Bu əmr vasitəsilə başqalarını 1 mətnlə tag edə bilərsən.__\n`Nümunə: /mentionall Akulalar oyaqdılar!`\n__Həmçinin 1 mesaja cavab verərək /mentionall əmrini işlədə bilərsən. Bot userləri həmin mesaja tag edəcək__."
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('📣 Kanal', 'https://t.me/EpicProjects'),
-                      Button.url('👩‍💻 Öz botunu yarat', 'https://t.me/epicprojects/16')]
+                      [Button.url('📣 Kanal', 'https://t.me/taggersup'),
+                      Button.url('👩‍💻 Öz botunu yarat', 'https://t.me/BotFather')]
                     ),
                     link_preview=False
                    )
@@ -82,5 +82,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
         
-print(">> Akula Oyaqdı 🦈<<")
+print(">> ERROR Oyaqdı <<")
 client.run_until_disconnected()
