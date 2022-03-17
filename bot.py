@@ -35,7 +35,7 @@ async def help(event):
                    )
   
 @client.on(events.NewMessage(pattern="^/all ?(.*)"))
-async def, all(event):
+async def all(event):
   if event.is_private:
     return await event.respond("__Bu əmr yalnız kanal və qruplarda istifadə edilə bilər!__")
   
