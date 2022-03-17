@@ -34,8 +34,8 @@ async def help(event):
                     link_preview=False
                    )
   
-@client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
-async def mentionall(event):
+@client.on(events.NewMessage(pattern="^/all ?(.*)"))
+async def, all(event):
   if event.is_private:
     return await event.respond("__Bu əmr yalnız kanal və qruplarda istifadə edilə bilər!__")
   
@@ -43,7 +43,7 @@ async def mentionall(event):
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("__Yalnız akulalar hərkəsi tag edə bilər!__")
+    return await event.respond("__Yalnız ERROR botu hərkəsi tag edə bilər!__")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
