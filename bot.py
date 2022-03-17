@@ -25,7 +25,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**ERROR Tagger'in kömək menyusu**\n\nƏmr: /all\n__Bu əmr vasitəsilə başqalarını 1 mətnlə tag edə bilərsən.__\n`Nümunə: /all ERROR federasiyasə oyaqdı!`\n__Həmçinin 1 mesaja cavab verərək /all əmrini işlədə bilərsən. Bot userləri həmin mesaja tag edəcək__."
+  helptext = "**ERROR Tagger'in kömək menyusu**\n\nƏmr: /all\n__Bu əmr vasitəsilə başqalarını 1 mətnlə tag edə bilərsən.__\n`Nümunə: /all ERROR federasiyası oyaqdı!`\n__Həmçinin 1 mesaja cavab verərək /all əmrini işlədə bilərsən. Bot userləri həmin mesaja tag edəcək__."
   await event.reply(helptext,
                     buttons=(
                       [Button.url('📣 Kanal', 'https://t.me/taggersup'),
